@@ -1,0 +1,65 @@
+.blueimp-gallery > .slides > .slide {
+    cursor: pointer;
+}
+.spinner {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: url("/web/20180902083706im_/http://myanmar.travel/wp-content/plugins/flickr-album-gallery-pro/img/spinner.gif");
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: .8;
+}
+
+
+.gallery .thumb {
+	margin: 20px auto;
+}
+
+.gallery .error-wrapper {
+	margin: 20px 0;
+}
+
+.gallery .error-wrapper .error {
+	font-style: italic;
+}
+
+
+footer {
+	margin-top: 50px;
+	color: #333;
+}
+
+footer .footer-content {
+	text-align: right;
+	font-size: 0.7em;
+}
+
+footer .footer-content p {
+	margin-bottom: 3px;
+}
+
+footer .flickr-notice {
+	font-style: italic;
+	font-size: 0.9em;
+}
+/*
+     FILE ARCHIVED ON 08:37:06 Sep 02, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 08:04:50 May 20, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.662
+  exclusion.robots: 0.081
+  exclusion.robots.policy: 0.069
+  esindex: 0.009
+  cdx.remote: 24.72
+  LoadShardBlock: 373.514 (3)
+  PetaboxLoader3.datanode: 76.509 (4)
+  PetaboxLoader3.resolve: 324.281 (2)
+  load_resource: 79.937
+*/

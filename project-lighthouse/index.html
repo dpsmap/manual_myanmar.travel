@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Project Lighthouse - AI Tourism Ecosystem</title>
+
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #edf5ff, #dbe8f7);
+      min-height: 100vh;
+      padding: 40px;
+      color: #0f172a;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: auto;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 44px;
+      font-weight: 800;
+      margin-bottom: 20px;
+      color: #0b1b35;
+      letter-spacing: 1px;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 18px;
+      color: #475569;
+      max-width: 950px;
+      margin: 0 auto 50px;
+      line-height: 1.8;
+    }
+
+    /* CARDS */
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.78);
+      backdrop-filter: blur(12px);
+      border-radius: 28px;
+      padding: 30px;
+      box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    }
+
+    .card h2 {
+      font-size: 26px;
+      margin-bottom: 20px;
+      color: #102a56;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 8px 14px;
+      background: #eef4ff;
+      border-radius: 14px;
+      margin: 6px 6px 0 0;
+      font-size: 14px;
+      font-weight: 600;
+      color: #1f3b74;
+    }
+
+    ul {
+      padding-left: 20px;
+      line-height: 1.9;
+      margin-top: 18px;
+    }
+
+    li {
+      color: #334155;
+      margin-bottom: 12px;
+    }
+
+    /* WORKFLOW */
+
+    .workflow {
+      margin-top: 30px;
+      background: rgba(255, 255, 255, 0.72);
+      border-radius: 34px;
+      padding: 45px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .workflow-title {
+      text-align: center;
+      font-size: 36px;
+      font-weight: 800;
+      margin-bottom: 45px;
+      color: #0b1b35;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .step {
+      background: white;
+      border-radius: 24px;
+      padding: 26px;
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+      border: 1px solid #e5eefb;
+      transition: 0.3s ease;
+    }
+
+    .step:hover {
+      transform: translateY(-5px);
+    }
+
+    .step-number {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #2563eb;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      margin-bottom: 18px;
+      font-size: 18px;
+    }
+
+    .step h3 {
+      margin-bottom: 14px;
+      color: #0f172a;
+      font-size: 22px;
+    }
+
+    .step p {
+      color: #475569;
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    /* PLATFORM LINKS */
+
+    .platform-links {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .platform-card {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 18px;
+      background: #f1f5ff;
+      border-radius: 14px;
+      text-decoration: none;
+      color: #1e3a8a;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    .platform-card:hover {
+      transform: translateY(-3px);
+      background: #dbeafe;
+    }
+
+    .platform-card i {
+      font-size: 18px;
+    }
+
+    /* LANGUAGES */
+
+    .languages {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .lang {
+      background: #dbeafe;
+      color: #1d4ed8;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    /* RESOURCE SECTION */
+
+    .resource-section {
+      margin-top: 70px;
+    }
+
+    .resource-section h2 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 40px;
+      color: #0b1b35;
+      font-weight: 800;
+    }
+
+    .resource-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .resource-card {
+      background: rgba(255, 255, 255, 0.78);
+      border-radius: 26px;
+      padding: 30px;
+      text-decoration: none;
+      color: #0f172a;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      transition: 0.35s ease;
+    }
+
+    .resource-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    .resource-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 18px;
+      background: #dbeafe;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 22px;
+    }
+
+    .resource-icon i {
+      font-size: 30px;
+      color: #2563eb;
+    }
+
+    .resource-card h3 {
+      margin-bottom: 14px;
+      font-size: 22px;
+    }
+
+    .resource-card p {
+      color: #475569;
+      line-height: 1.8;
+    }
+
+    /* FOOTER */
+
+    .footer {
+      text-align: center;
+      margin-top: 60px;
+      color: #64748b;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:768px) {
+
+      body {
+        padding: 20px;
+      }
+
+      .title {
+        font-size: 30px;
+      }
+
+      .workflow-title,
+      .resource-section h2 {
+        font-size: 28px;
+      }
+
+      .subtitle {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- TITLE -->
+
+    <div class="title">
+      PROJECT LIGHTHOUSE
+    </div>
+
+    <div class="subtitle">
+      AI-Powered Tourism Intelligence & Digital Marketing Ecosystem
+      built on historical tourism research, AI automation,
+      multilingual outreach, and real-time engagement systems.
+    </div>
+
+    <!-- RESEARCH CARDS -->
+
+    <div class="grid">
+
+      <!-- CARD 1 -->
+
+      <div class="card">
+
+        <h2>📚 Historical Research Data</h2>
+
+        <div class="pill">2013 Tourism Data</div>
+        <div class="pill">2018 Conference Reports</div>
+        <div class="pill">English & Myanmar</div>
+
+        <ul>
+          <li>Existing tourism research documentation and archived reports.</li>
+          <li>Conference materials in both English and Myanmar language.</li>
+          <li>Long-term tourism intelligence for AI-driven analysis.</li>
+        </ul>
+
+      </div>
+
+      <!-- CARD 2 -->
+
+      <div class="card">
+
+        <h2>🔍 2025 Mini Research</h2>
+
+        <div class="pill">Inbound Tourism</div>
+        <div class="pill">Hospitality</div>
+        <div class="pill">Tourism Industry</div>
+
+        <ul>
+          <li>Recent survey findings covering the Four Pillars of Tourism.</li>
+          <li>Interviews with leading hotels including Pan Pacific.</li>
+          <li>Fresh market insights for digital tourism transformation.</li>
+        </ul>
+
+      </div>
+
+      <!-- CARD 3 -->
+
+      <div class="card">
+
+        <h2>🗂️ Potter Database Access</h2>
+
+        <div class="pill">RAG Integration</div>
+        <div class="pill">Deep Analytics</div>
+        <div class="pill">Tourism Intelligence</div>
+
+        <ul>
+          <li>Utilization of the under-leveraged Potter Database.</li>
+          <li>AI-powered retrieval and contextual tourism analysis.</li>
+          <li>Natural language insights using Retrieval-Augmented Generation.</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+    <!-- WORKFLOW -->
+
+    <div class="workflow">
+
+      <div class="workflow-title">
+        Proposed AI Workflow
+      </div>
+
+      <div class="steps">
+
+        <!-- STEP 1 -->
+
+        <div class="step">
+
+          <div class="step-number">1</div>
+
+          <h3>Data Analysis</h3>
+
+          <p>
+            RAG (Retrieval-Augmented Generation) processes tourism
+            datasets, surveys, and historical records to generate
+            accurate natural-language intelligence.
+          </p>
+
+        </div>
+
+        <!-- STEP 2 -->
+
+        <div class="step">
+
+          <div class="step-number">2</div>
+
+          <h3>Strategy & Planning</h3>
+
+          <p>
+            AI automatically generates 30-day or 365-day
+            marketing calendars, newsletters, and tourism
+            campaign strategies.
+          </p>
+
+        </div>
+
+        <!-- STEP 3 -->
+
+        <div class="step">
+
+          <div class="step-number">3</div>
+
+          <h3>Content Creation</h3>
+
+          <p>
+            AI generates multilingual content for social media,
+            influencer storytelling, tourism campaigns,
+            and digital outreach.
+          </p>
+
+          <div class="platform-links">
+
+            <a href="https://www.facebook.com/OfficialMyanmar/"
+              target="_blank"
+              class="platform-card">
+
+              <i class="fab fa-facebook"></i>
+              <span>Facebook</span>
+
+            </a>
+
+            <a href="https://myanmar.travel/blog/"
+              target="_blank"
+              class="platform-card">
+
+              <i class="fas fa-globe"></i>
+              <span>Tourism Blog</span>
+
+            </a>
+
+            <a href="https://web.archive.org/web/20170515170353/http://myanmar.travel/meet-in-myanmar/"
+              target="_blank"
+              class="platform-card">
+
+              <i class="fas fa-map-marked-alt"></i>
+              <span>Meet in Myanmar</span>
+
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- STEP 4 -->
+
+        <div class="step">
+
+          <div class="step-number">4</div>
+
+          <h3>Multilingual Outreach</h3>
+
+          <p>
+            Tourism content localized into multiple languages
+            for international audience engagement and promotion.
+          </p>
+
+          <div class="languages">
+
+            <div class="lang">English</div>
+            <div class="lang">Chinese</div>
+            <div class="lang">Thai</div>
+            <div class="lang">Russian</div>
+            <div class="lang">German</div>
+            <div class="lang">French</div>
+
+          </div>
+
+        </div>
+
+        <!-- STEP 5 -->
+
+        <div class="step">
+
+          <div class="step-number">5</div>
+
+          <h3>AI Chatbot Execution</h3>
+
+          <p>
+            AI chatbot integration across websites,
+            Messenger, and Viva including automated
+            inquiry handling and voice call support.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- RESOURCE SECTION -->
+
+    <div class="resource-section">
+
+      <h2>Tourism Research & Data Sources</h2>
+
+      <div class="resource-grid">
+
+        <!-- CARD -->
+
+        <a href="https://web.archive.org/web/20170515170353/http://myanmar.travel/meet-in-myanmar/"
+          target="_blank"
+          class="resource-card">
+
+          <div class="resource-icon">
+            <i class="fas fa-building"></i>
+          </div>
+
+          <h3>Meet in Myanmar</h3>
+
+          <p>
+            Historical tourism promotion platform and
+            MICE tourism reference archive.
+          </p>
+
+        </a>
+
+        <!-- CARD -->
+
+        <a href="https://myanmar.travel/"
+          target="_blank"
+          class="resource-card">
+
+          <div class="resource-icon">
+            <i class="fas fa-earth-asia"></i>
+          </div>
+
+          <h3>Myanmar Travel</h3>
+
+          <p>
+            Official tourism portal featuring destinations,
+            travel insights, and tourism resources.
+          </p>
+
+        </a>
+
+        <!-- CARD -->
+
+        <a href="https://www.facebook.com/OfficialMyanmar/"
+          target="_blank"
+          class="resource-card">
+
+          <div class="resource-icon">
+            <i class="fab fa-facebook"></i>
+          </div>
+
+          <h3>Official Myanmar Facebook</h3>
+
+          <p>
+            Social media tourism outreach and audience
+            engagement platform.
+          </p>
+
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <div class="footer">
+
+      Project Lighthouse • AI Tourism Intelligence Ecosystem<br>
+
+      Powered by Historical Research, AI Automation,
+      Multilingual Marketing, and Digital Tourism Innovation.
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>

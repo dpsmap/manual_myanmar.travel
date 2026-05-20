@@ -1,0 +1,3535 @@
+@import url(https://web.archive.org/web/20180804231846cs_/http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic);
+
+html, body, div, span, object, iframe, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, q, small, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+article, aside, figure, figure img, figcaption, hgroup, footer, header, nav, section, video, object {
+    display: block;
+}
+
+section::before, article::before, section::after, article::after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+}
+
+figure {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+}
+
+figure img {
+    width: 100%;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+nav,
+section {
+    display: block;
+    position: relative;
+}
+
+ol,
+ul {
+    margin: 0 0 20px 20px;
+}
+
+li {
+    line-height: 24px;
+}
+
+ul ul,
+ul ol {
+    margin-bottom: 0
+}
+
+.center {
+    text-align: center;
+}
+
+iframe {
+    display: table;
+    margin: 0 auto 20px auto;
+}
+
+table,
+th,
+td {
+    border: 1px solid #e4e4e4;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-width: 1px 0 0 1px;
+    margin: 0 0 40px 0;
+}
+
+th {
+    border-width: 0 1px 1px 0;
+    color: #900651;
+    font-weight: 600;
+    padding: 5px;
+    text-align: left;
+}
+
+td {
+    border-width: 0 1px 1px 0;
+    padding: 5px;
+    text-align: left;
+}
+
+caption {
+    font-weight: normal;
+    text-align: left;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #d4d4d4;
+    border-bottom: 1px solid #fff;
+    height: 0px;
+    margin-bottom: 30px;
+}
+
+blockquote {
+    color: #404040;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 26px;
+    padding: 40px 50px 20px 100px;
+    position: relative;
+}
+
+blockquote:before {
+    background: url(/web/20180804231846im_/http://myanmar.travel/wp-content/themes/myanmartravels/images/style/sprites.png) -225px -135px no-repeat;
+    display: block;
+    height: 38px;
+    left: 25px;
+    position: absolute;
+    top: 40px;
+    width: 45px;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+}
+
+blockquote,
+q {
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    quotes: none;
+}
+
+a:focus,
+a:hover,
+a:active {
+    outline: none;
+}
+ 
+a img {
+    border: 0;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+button {
+	outline: none;
+}
+
+/* Transition */
+a, i, button, :hover, :before, :after {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+img {
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Typographs */
+body {
+    background: #fff;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+}
+
+input,
+select,
+textarea {
+    color: #555;
+    font-size: 13px;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 35px;
+    margin: 0 0 20px 0;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 0 0 20px 0;
+}
+
+h3 {
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 0 20px 0;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0 0 20px 0;
+}
+
+h5 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    margin: 0 0 20px 0;
+}
+
+h6 {
+    color: #000;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    margin: 0 0 20px 0;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+b,
+strong {
+    font-weight: 700;
+}
+
+dfn,
+cite,
+em,
+i {
+    font-style: italic;
+}
+
+/* Links */
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: #333;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+/* Read More Button */
+.readon {
+    display: block;
+    text-align: center;
+}
+
+.readon.left {
+    text-align: left;
+}
+
+.readon a, .news-more a {
+    color: #fff;
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 25px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+/* Form Elements */
+input,
+textarea {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    outline: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+    color: #555;
+    opacity: 1;
+}
+
+:-moz-placeholder {
+    color: #555;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: #555;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #555;
+    opacity: 1;
+}
+
+/* Image Alignment */
+.alignleft,
+img.alignleft {
+    display: inline;
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+.alignright,
+img.alignright {
+    display: inline;
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+.aligncenter,
+img.aligncenter {
+    clear: both;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.alignnone,
+img.alignnone {
+}
+
+.wp-caption {
+    line-height: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    text-align: center;
+}
+
+.wp-caption a {
+    display: block;
+}
+
+.wp-caption img {
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+
+.wp-caption .wp-caption-text {
+    color: #757575;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 18px;
+    margin: 0;
+}
+
+blockquote.left {
+    float: left;
+    margin-right: 20px;
+    margin-left: 0;
+    text-align: right;
+    width: 33%;
+}
+
+blockquote.right {
+    float: right;
+    margin-right: 0;
+    margin-left: 20px;
+    text-align: left;
+    width: 33%;
+}
+
+/* Video Wrapper */
+.videoWrapper {
+    height: 0;
+    padding: 25px 0 56.25% 0;
+    position: relative;
+    margin: 0;
+}
+
+.videoWrapper iframe,
+.videoWrapper object,
+.videoWrapper embed {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+/*Page Navigation*/
+.wp-pagenavi {
+    display: block;
+    text-align: center;
+}
+
+.wp-pagenavi::after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+.wp-pagenavi a,
+.wp-pagenavi span {
+    border: 1px solid #B3975A;
+    color: #111;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 40px;
+    padding: 0 15px;
+    margin: 0 2px;
+}
+
+.wp-pagenavi a:hover,
+.wp-pagenavi span.current {
+    color: #fff;
+    background: #B3975A;
+}
+
+/* 404 Error */
+.error404-page {
+    display: block;
+    max-width: 600px;
+    margin: auto;
+    padding: 100px 0;
+}
+
+.error404-page h2 {
+    font-size: 100px;
+    line-height: 60px;
+    color: #ff0000;
+}
+
+.error404-page h2 small {
+    color: #000;
+    font-size: 30%;
+    text-transform: uppercase;
+}
+
+/* Grid Layout */
+.container {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 1000px!important;
+}
+
+.container.small {
+    width: 805px;
+}
+
+.container .split {
+    float: left;
+    margin-right: 40px;
+    width: 480px;
+}
+
+.container .split:last-child {
+    margin-right: 0;
+}
+
+.row {
+    display: block;
+    position: relative;
+    margin-left: 0!important;
+    margin-right: 0!important;
+}
+
+.column {
+    display: inline;
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+}
+
+/* Header */
+header .top {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+header .top .center {
+    display: inline-block;
+}
+
+header .bottom {
+    background-image: url(/web/20180804231846im_/http://myanmar.travel/wp-content/themes/myanmartravels/images/style/header-kanote.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top-nav  {
+    display: inline-block;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav  li {
+    color: #fff;
+    font-weight: 600;
+    display: inline-block;
+    float: left;
+    line-height: 50px;
+}
+
+.top-nav li::after {
+    content: "|";
+    margin: 0 8px 0 10px;
+}
+
+.top-nav li:last-child::after {
+    content: none;
+}
+
+.top-nav li a {
+    color: #fff;
+}
+
+.top-nav li a:hover {
+    color: #000;
+}
+
+.btn_open {
+	display: none;
+}
+
+.search-box {
+    display: inline-block;
+    float: left;
+    margin-left: 30px;
+    padding: 10px 0;
+    position: relative;
+    width: 220px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.search-box .frame::after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+.search-box .frame {
+    background: url(/web/20180804231846im_/http://myanmar.travel/wp-content/themes/myanmartravels/images/style/sprites.png) -10px -100px no-repeat;
+    display: block;
+    height: 30px;
+    position: relative;
+}
+
+.search-box input {
+    background: transparent;
+    border: none;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    padding: 5px 60px 5px 15px;
+    width: 150px;
+}
+
+.search-box button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #999;
+    float: left;
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    height: 30px;
+    line-height: 20px;
+    width: 30px;
+}
+
+.search-box button i {
+    top: -4px;
+    position: relative;
+}
+
+.search-box button:hover {
+    color: #000;
+}
+
+header .bottom {
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .bottom .container {
+    height: 67px;
+}
+
+header .bottom .middle {
+    display: inline-block;
+}
+
+.logo {
+    background: url(/web/20180804231846im_/http://myanmar.travel/wp-content/themes/myanmartravels/images/style/sprites.png) -10px -10px no-repeat;
+    display: block;
+    float: left;
+    height: 57px;
+    line-height: 0;
+    width: 300px;
+    margin: 5px 25px 5px 0;
+}
+
+.logo a {
+    display: block;
+    height: 57px;
+    text-indent: -9999px;
+}
+
+/* Main Menu */
+nav {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+nav ul.mainmenu {
+    display: block;
+    height: 67px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: left;
+}
+
+header nav ul.mainmenu > li:nth-child(1),
+header nav ul.mainmenu > li:nth-child(2),
+header nav ul.mainmenu > li:nth-child(3),
+header nav ul.mainmenu > li:nth-child(4),
+header nav ul.mainmenu > li:nth-child(5) {
+    display: none;
+}
+
+nav ul.mainmenu > li {
+    border-right: 1px solid #000;
+    float: left;
+    height: 67px;
+    line-height: 67px;
+    margin: 0;
+    position: relative;
+}
+
+nav ul.mainmenu > li:last-child {
+    border-right: 0;
+}
+
+nav ul.mainmenu > li > a {
+    color: #000;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    height: 67px;
+    line-height: normal;
+    padding: 0 15px;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    max-width: 100px;
+}
+
+nav ul.mainmenu > li > a:hover {
+    color: #fff;
+}
+
+nav ul li.menu-item-has-children > a::after {
+    background: url(/web/20180804231846im_/http://myanmar.travel/wp-content/themes/myanmartravels/images/style/sprites.png) -10px -190px no-repeat;
+    border: 1px solid #000;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    bottom: 0;
+    content: "";
+    height: 14px;
+    left: 50%;
+    margin-left: -7px;
+    position: absolute;
+    width: 14px;
+}
+
+nav ul li.menu-item-has-children > a:hover::after {
+    background: url(/web/20180804231846im_/http://myanmar.travel/wp-content/themes/myanmartravels/images/style/sprites.png) -10px -170px no-repeat;
+    border: 1px solid #fff;
+}
+
+nav ul ul {
+    display: none;
+    height: auto;
+    list-style: none;
+    left: 0;
+    margin: 0;
+    padding: 10px 0 0 0;
+    position: absolute;
+    text-transform: none;
+    top: 67px;
+    width: 200px;
+    z-index: 99999;
+}
+
+nav > ul > li:hover > ul {
+    display: block;
+}
+
+nav ul ul li {
+    background: #f5f5f5;
+    display: block;
+    padding: 0;
+    line-height: 20px;
+    padding: 0;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+nav ul ul li:last-child {
+    border-bottom: 0;
+}
+
+nav ul ul a {
+    color: #404040;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 5px 15px;
+    text-transform: none;
+    display: block;
+}
+
+nav ul ul a:hover {
+    background: #000;
+    color: #fff;
+}
+
+nav ul ul ul {
+    background: #f1f1f1;
+    left: 200px;
+    top: 0;
+}
+
+nav > ul > li > ul > li:hover > ul {
+    left: 190px;
+}
+
+.breadcrumb {
+    background: #000;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.breadcrumb span {
+    color: #fff;
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+    padding-right: 28px;
+}
+
+.breadcrumb span:last-child {
+    margin-left: 0;
+    padding-right: 0;
+}
+
+.breadcrumb span::after {
+    content: "";
+    background: url(/web/20180804231846im_/http://myanmar.travel/wp-content/themes/myanmartravels/images/style/sprites.png) -10px -210px no-repeat;
+    height: 14px;
+    position: absolute;
+    right: 0;
+    top: 4px;
+    width: 14px;
+}
+
+.breadcrumb span:last-child::after {
+    content: none;
+}
+
+.breadcrumb span a {
+    color: #fff;
+}
+
+.breadcrumb span a:hover {
+    color: #999;
+}
+
+/* Heading & Titles */
+.section-title {
+    color: #000;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 42px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.section-title::after {
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 4px;
+    left: 50%;
+    margin-left: -18px;
+    position: absolute;
+    width: 36px;
+}
+
+.content-title {
+    color: #000;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.content-title .subline {
+    font-size: 80%;
+    font-weight: 400;
+    text-transform: none;
+}
+
+.black {
+    background: #000;
+    color: #b3975a;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 46px;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* End of Heading & Titles */
+.search-results .search-title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 10px;
+    text-transform: none;
+}
+
+.search-results .search-title span {
+    font-weight: 700;
+}
+
+.search-results .content-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    text-transform: none;
+}
+
+.search-results .content-title a {
+    color: #B3975A;
+}
+
+.search-results .content-title a:hover {
+    color: #000;
+}
+
+.box-intro {
+    background: #000;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 32px;
+    display: block;
+    padding: 35px 0;
+    text-align: center;
+}
+
+.box-intro .desc { 
+    display: block;
+    margin: auto;
+    max-width: 745px;
+}
+
+.box-intro .desc a {
+    color: #fff;
+}
+
+.box-intro .desc a:hover {
+    color: #999;
+}
+
+.content {
+    display: block;
+    padding: 40px 0;
+}
+
+.content .section-title {
+    font-size: 
+}
+
+.art {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.art:before,
+.art:after {
+    content: "";
+    display: block;
+    height: 349px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 166px;
+    z-index: -1;
+}
+
+.art:before {
+    background: url(/web/20180804231846im_/http://myanmar.travel/wp-content/themes/myanmartravels/images/style/sprites.png) 0 -290px;
+    left: 0;
+}
+
+.art:after {
+    background: url(/web/20180804231846im_/http://myanmar.travel/wp-content/themes/myanmartravels/images/style/sprites.png) -175px -290px;
+    right: 0;
+}
+
+.content .block {
+    display: block;
+}
+
+.content .block:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+.content .block figure.alignleft {
+    float: left;
+    margin-right: 30px;
+    width: 510px;
+}
+
+.content .block figure.alignright {
+    float: right;
+    margin-left: 30px;
+    width: 510px;
+}
+
+.content .block .box {
+    display: table;
+}
+
+.ask {
+    background: #000;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.ask h3 {
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 60px;
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+}
+
+.ask h4 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 60px;
+    margin-bottom: 40px;
+}
+
+.ask .social-icon {
+    display: block;
+}
+
+.ask .social-icon a {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.ask .social-icon i {
+    background: #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    display: block;
+    font-size: 22px;
+    height: 36px;
+    line-height: 36px;
+    width: 36px;
+}
+
+.ask .social-icon i.icon-blogger {
+    background: #fff url(/web/20180804231846im_/http://myanmar.travel/wp-content/themes/myanmartravels/images/style/icon-blogger.png);
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.ask .social-icon i.icon-blogger:before {
+    content: ".";
+    color: #fff;
+    z-index: -1;
+    visibility: hidden;
+}
+
+.ask .social-icon a:hover i.icon-blogger {
+    background: #fff url(/web/20180804231846im_/http://myanmar.travel/wp-content/themes/myanmartravels/images/style/icon-blogger-hover.png);
+}
+
+footer {
+    margin: 0!important;
+}
+
+footer .top {
+    background-image: url(/web/20180804231846im_/http://myanmar.travel/wp-content/themes/myanmartravels/images/style/footer-kanote.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 0px;
+    text-align: center;
+
+}
+
+footer .top .container {
+    height: 67px;
+}
+
+footer .top .middle {
+    display: inline-block;
+}
+
+footer .bottom {
+    border-top: 1px solid #fff;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer nav ul.mainmenu > li {
+    border-right: 1px solid #fff;
+}
+
+footer nav ul.mainmenu > li > a {
+    color: #fff;
+}
+
+footer nav ul.mainmenu > li > a:hover {
+    color: #000;
+}
+
+footer nav ul.mainmenu li.menu-item-has-children > a::after {
+    border-color: #fff;
+    background-position: -40px -170px;
+}
+
+footer nav ul.mainmenu li.menu-item-has-children > a:hover::after {
+    background-position: -40px -190px;
+    border-color: #000;
+}
+
+footer nav ul ul {
+    top: auto;
+    bottom: 67px;
+    padding: 0 0 10px 0;
+}
+
+/* ============= Main Content Style Sheet ============= */
+.video figure {
+    display: block;
+    float: left;
+    line-height: 0;
+    margin-right: 20px;
+    position: relative;
+    width: 420px;
+}
+
+.video figure i {
+    border: 5px solid #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 40px;
+    position: absolute;
+    height: 80px;
+    line-height: 80px;
+    left: 50%;
+    text-align: center;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 80px;
+    z-index: 99;
+}
+
+.video figure i:before {
+    margin-left: 10px;
+}
+
+.video figure img {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+.video figure a:hover img {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.video .details {
+    display: table;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+}
+
+.video .details .title {
+    background: #b3975a;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+
+.video .details  p:last-child {
+    margin-bottom: 0;
+}
+
+.box-tweet {
+    background: #b3975a url(/web/20180804231846im_/http://myanmar.travel/wp-content/themes/myanmartravels/images/style/middle-kanote.png) 50% 50% no-repeat;
+    background-size: cover;
+    padding: 40px 0 30px 0;
+}
+
+.box-tweet .section-title {
+    text-transform: none;
+}
+
+.features {
+    display: block;
+}
+
+.features:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+.features .box {
+    display: block;
+    float: left;
+    margin-right: 20px;
+    width: 235px;
+}
+
+.features .box:last-child {
+    margin-right: 0;
+}
+
+.features .box .title {
+    color: #000;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.features .box figure {
+    margin-bottom: 10px;
+}
+
+.features .box .intro {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.map {
+    border: 1px solid #B3975A;
+    display: block;
+    width: 400px;
+    margin: auto;
+}
+
+.home-getintouch {
+    float: left;
+    margin-right: 50px;
+    width: 250px;
+}
+
+.sitemap .title,
+.tripadvisor .title {
+    background: #B3975A;
+    border: 1px solid #845F00;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 15px;
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+
+.home-getintouch .title {
+    background: #B3975A;
+    border: 1px solid #845F00;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+
+.home-getintouch h4 {
+    background: #B3975A;
+    border: 1px solid #845F00;
+    color: #000;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+.home-getintouch .box {
+    display: block;
+    padding-left: 10px;
+}
+
+.partners {
+    display: block;
+    float: left;
+    width: 700px;
+}
+
+.partners .title {
+    background: #B3975A;
+    border: 1px solid #845F00;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    text-transform: uppercase;
+    max-width: 250px;
+}
+
+.partners .company-logos {
+    display: block;
+}
+
+.partners .company-logos .box {
+    float: left;
+    display: block;
+    margin-right: 1%;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 32%;
+    position: relative;
+    height: 80px;
+}
+
+.partners .company-logos .box img {
+    height: auto;
+    max-height: 70px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    max-width: 
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.partners .company-logos:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+.jumpto {
+    display: block;
+}
+
+.jumpto:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+.jumpto .box {
+    display: block;
+    float: left;
+    margin: 5px 10px 5px 0;
+    width: 495px;
+}
+
+.jumpto .box:nth-child(2n+2) {
+    margin-right: 0;
+}
+
+.jumpto .box figure {
+    float: left;
+    width: 250px;
+}
+
+.jumpto .box .name {
+    color: #fff;
+    display: block;
+    float: left;
+    height: 166px;
+    position: relative;
+    width: 245px;
+}
+
+.jumpto .box .name .middle {
+    display: table;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 38px;
+    left: 50%;
+    padding: 20px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/* ============= Tab Content ============= */
+.tabs {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.tabs ul.list {
+    background: rgba(179,151,90,0.5);
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 345px;
+}
+.tabs ul.list li {
+    padding-bottom: 12px;
+    height: 42px;
+    line-height: 42px;
+    display: block;
+}
+
+.tabs ul.list li:first-child {
+    padding-top: 12px;
+}
+
+.tabs ul.list li a {
+    background: #b49859;
+    border-left: 7px solid #b3975a;
+    color: #fff;
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 10px 0 35px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.tabs ul.list li a span.subline {
+    font-size: 60%;
+}
+
+.tabs ul.list li a:hover,
+.tabs ul.list li.active a {
+    border-left: 7px solid #1a2d39;
+    color: #000;
+    position: absolute;
+    width: 340px;
+    z-index: 9999;
+}
+
+.tabs ul.list li a:hover:after,
+.tabs ul.list li.active a:after {
+    background: url(/web/20180804231846im_/http://myanmar.travel/wp-content/themes/myanmartravels/images/style/sprites.png) -350px -180px no-repeat;
+    content: "";
+    position: absolute;
+    right: -40px;
+    top: 0;
+    width: 40px;
+    height: 42px;
+}
+
+.tabs ul.list li .box {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+
+}
+
+.tabs ul.list li.active .box {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+/* Activities Packages */
+
+.activities-bg {
+    padding-bottom: 0;
+}
+
+.activities-bg:last-child {
+    padding-bottom: 30px;
+}
+
+.activities-package {
+    display: block;
+}
+
+.activities-package:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+.activities-package .block {
+    background: #fff;
+    float: left;
+    margin: 0 5px 0 0;
+    width: 330px;
+}
+
+.activities-package .block:nth-child(1),
+.activities-package .block:nth-child(2),
+.activities-package .block:nth-child(3) {
+    margin-top: 0;
+}
+
+.activities-package .block:nth-child(3n+3) {
+    margin-right: 0;
+}
+
+.activities-package.gallery .block:first-child {
+    width: 665px;
+}
+
+.activities-package.gallery .block:nth-child(2) {
+    margin-right: 0;
+}
+
+.activities-package.gallery .block h3 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.activities-package.gallery .block .photo-list {
+    display: block;
+    text-align: center;
+    padding: 0 15px 15px 15px;
+}
+
+.activities-package.gallery .block .photo-list:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+.activities-package.gallery .block .photo-list .box {
+    display: block;
+    float: left;
+    line-height: 0;
+    margin: 0 10px 10px 0;
+    width: 205px;
+}
+
+/*--Remove Later*/
+.activities-package.gallery .block .photo-list .box img {
+    height: 160px;
+}/*--Remove Later*/
+
+.activities-package.gallery .block .photo-list .box:nth-child(3n+3) {
+    margin-right: 0;
+}
+
+.activities-package.gallery .block .photo-list .box a {
+    display: block;
+}
+
+.activities-package .block .title {
+    color: #B3975A;
+    display: block;
+    text-align: center;
+    padding: 0;
+    position: relative;
+    text-transform: uppercase;
+    height: 110px;
+}
+
+.activities-package .block .title span {
+    display: block;
+    font-size: 35px;
+    left: 50%;
+    line-height: 40px;
+    position: absolute;
+    padding: 0 2.5%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 95%;
+}
+
+.activities-package .block .intro {
+    display: block;
+    padding: 15px 20px 0 20px;
+}
+
+.activities-package .block .readon {
+    margin-bottom: 20px;
+}
+
+.activities-package .block.blog {
+    text-align: center;
+}
+
+.activities-package.gallery .block .title,
+.activities-package .block.blog .title {
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    line-height: 60px;
+}
+
+.activities-package.gallery .block .title span,
+.activities-package .block.blog .title span {
+    display: block;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.activities-package.gallery .block .title span::after,
+.activities-package .block.blog .title span::after {
+    bottom: -20px;
+    content: "";
+    display: block;
+    height: 4px;
+    left: 50%;
+    margin-left: -18px;
+    position: absolute;
+    width: 36px;
+}
+
+.activities-package .block.blog .intro {
+    padding: 15px 20px;
+}
+
+.activities-package .block.blog .box:first-child {
+    margin-bottom: 20px;
+}
+
+.activities-package .block.blog h3 {
+    padding: 0 15px;
+}
+
+.activities-package .block.blog .readon {
+    margin-bottom: 0;
+}
+
+.activities-package .block.blog .readon a {
+    border-bottom: 0;
+}
+
+.related-post {
+    display: block;
+    margin-top: 30px;
+}
+
+.related-post:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+.related-post .box {
+    float: left;
+    width: 320px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.related-post .box:nth-child(3n+3) {
+    margin-right: 0;
+}
+
+.related-post .box .title {
+    color: #b3975a;
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.related-post .box .title a {
+    color: #b3975a;
+}
+
+.related-post .box .title a:hover {
+    color: #000;
+}
+
+.related-post .box .date,
+.related-post .box .postedby {
+    color: #000;
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#contactus {
+    display: block;
+    padding: 0;
+}
+
+#contactus::after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+#contactus .col-left {
+    border-right: 1px solid #b3975a;
+    display: block;
+    float: left;
+    padding: 40px 19px 40px 0;
+    width: 480px;
+}
+
+#contactus .col-left .box {
+    display: block;
+    border-bottom: 1px solid #b3975a;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+#contactus .col-left .box:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#contactus .col-left .box h4 {
+    color: #000;
+    margin-bottom: 10px;
+}
+
+#contactus .col-left .box p:last-child {
+    margin-bottom: 0;
+}
+
+#contactus .col-right {
+    display: block;
+    float: left;
+    width: 470px;
+    padding: 40px 0 40px 30px;
+}
+
+#contactus .col-right .signup {
+    color: #fff;
+    background: #b3975a;
+    margin-left: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+#contactus .col-right .signup h3 {
+    border-bottom: 1px solid #000;
+    color: #fff;
+    font-size: 33px;
+    font-weight: 400;
+    line-height: 40px;
+    margin: 10px 0 20px 0;
+    padding-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#contactus .col-right .signup .note {
+    display: block;
+    font-size: 17px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+#contactus .col-right .signup input[type="email"] {
+    border: 0;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    height: 50px;
+    padding: 0 2.5%;
+    text-align: center;
+    width: 95%;
+}
+
+#contactus .signup ::-webkit-input-placeholder {color: #000;}
+#contactus .signup :-moz-placeholder {color: #000;}
+#contactus .signup ::-moz-placeholder {color: #000;}
+#contactus .signup :-ms-input-placeholder {color: #000;}
+
+#contactus .col-right .signup button {
+    background: #000;
+    border: 0;
+    color: #b3975a;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 38px;
+    font-weight: 700;
+    height: 55px;
+    text-transform: uppercase;
+}
+
+#contactus .col-right .signup button:hover {
+    background: #333;
+}
+
+.mission .section-title {
+    font-size: 33px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.mission ul {
+    list-style: none;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.mission ul li {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+.mission ul li:last-child {
+    margin-bottom: 0;
+}
+
+.welcome .title {
+    color: #000;
+    display: block;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.welcome .desc {
+    border-top: 1px solid #b3975a;
+    border-bottom: 1px solid #b3975a;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 20px 0;
+}
+
+.welcome .desc:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+.welcome .desc .col {
+    float: left;
+    width: 470px;
+}
+
+.welcome .desc .col:first-child {
+    margin-right: 60px;
+}
+
+.members {
+    display: block;
+    padding-top: 20px;
+}
+
+.members:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+.members figure {
+    float: left;
+    margin-right: 30px;
+    width: 500px;
+}
+
+.members .details {
+    display: table;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.members .details ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.members .details ul li {
+    display: block;
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 30px;
+}
+
+.members .details ul li:before {
+    background: url(/web/20180804231846im_/http://myanmar.travel/wp-content/themes/myanmartravels/images/style/sprites.png) -250px -170px no-repeat;
+    content: "";
+    display: block;
+    position: relative;
+    height: 16px;
+    left: 0;
+    position: absolute;
+    top: 4px;
+    width: 16px;
+}
+
+.exe-members {
+    border-right: 1px solid #b3975a;
+    font-size: 18px;
+    float: left;
+    padding-right: 19px;
+    width: 480px;
+}
+
+.exe-members .section-title {
+    font-size: 32px;
+}
+
+.exe-members ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.exe-members ul li {
+    display: block;
+    position: relative;
+    margin-bottom: 5px;
+    padding-left: 30px;
+}
+
+.exe-members ul li:before {
+    background: url(/web/20180804231846im_/http://myanmar.travel/wp-content/themes/myanmartravels/images/style/sprites.png) -250px -170px no-repeat;
+    content: "";
+    display: block;
+    position: relative;
+    height: 16px;
+    left: 0;
+    position: absolute;
+    top: 4px;
+    width: 16px;
+}
+
+.getintouch {
+    float: left;
+    width: 450px;
+    padding-left: 50px;
+}
+
+.getintouch .section-title {
+    font-size: 32px;
+}
+
+.getintouch .box {
+    display: block;
+    border-bottom: 1px solid #b3975a;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.getintouch .box:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.getintouch .box p:last-child {
+    margin-bottom: 0;
+}
+
+.meetinmyanmar h2 {
+    color: #b3975a;
+    font-size: 65px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.meetinmyanmar h3 {
+    color: #000;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45px;
+}
+
+.meetinmyanmar h3 span {
+    display: block;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.meetinmyanmar .block {
+    display: block;
+    padding-top: 20px;
+}
+
+.meetinmyanmar .block:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+.meetinmyanmar .block figure {
+    float: left;
+    margin-right: 5px;
+    width: 665px;
+}
+
+.meetinmyanmar .block .info {
+    font-size: 30px;
+    line-height: 40px;
+    display: table;
+    padding: 30px 40px;
+    position: relative;
+    background: #b6985c;
+    min-height: 405px;
+}
+
+.meetinmyanmar .block .info p:last-child {
+    margin-bottom: 0;
+}
+
+.threecol {
+    display: block;
+}
+
+.threecol:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+.threecol .col-info {
+    color: #fff;
+    font-size: 14px;
+    display: block;
+    float: left;
+    margin-right: 5px;
+    min-height: 585px;
+    padding: 20px 30px;
+    text-align: justify;
+    width: 270px;
+}
+
+.threecol .col-info .section-title {
+    color: #fff;
+    font-size: 33px;
+    line-height: 43px;
+    text-transform: none;
+}
+
+.threecol .col-info .section-title:after {
+    background: #fff;
+}
+
+.threecol .col-info ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.threecol .col-info ul li {
+    display: block;
+    position: relative;
+    margin-bottom: 5px;
+    padding-left: 30px;
+    text-align: left;
+}
+
+.threecol .col-info ul li:before {
+    background: url(/web/20180804231846im_/http://myanmar.travel/wp-content/themes/myanmartravels/images/style/sprites.png) -280px -170px no-repeat;
+    content: "";
+    display: block;
+    position: relative;
+    height: 16px;
+    left: 0;
+    position: absolute;
+    top: 4px;
+    width: 16px;
+}
+
+.threecol .col-image {
+    display: block;
+    float: left;
+    margin-right: 5px;
+    width: 330px;
+}
+
+.threecol .col-blog {
+    display: block;
+    float: left;
+    margin-right: 0;
+    padding: 20px 0 0 0;
+    text-align: center;
+    width: 330px;
+}
+
+.threecol .col-blog .box:first-child {
+    margin-bottom: 20px;
+}
+
+.threecol .col-blog .box h3 {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 23px;
+    padding: 0 15px;
+    margin-bottom: 10px;
+}
+
+.threecol .col-blog .box .intro {
+    padding: 10px 15px;
+}
+
+.threecol .col-blog .box .readon a {
+    border-bottom: 0;
+}
+
+/* ========== Destination ========== */
+.destination-title {
+    color: #fff;
+    display: block;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 75px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.destination-intro {
+    display: block;
+}
+
+.destination-intro:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+.destination-intro figure {
+    float: left;
+    display: inline-block;
+    max-width: 500px;
+    margin-right: 10px;
+}
+
+.destination-intro .intro {
+    color: #fff;
+    display: table;
+    padding: 20px;
+}
+
+.destination-gallery .section-title {
+    font-size: 55px;
+    line-height: 65px;
+}
+
+.destination-gallery .photo-list {
+    display: block;
+    text-align: center;
+}
+
+.destination-gallery .photo-list:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+.destination-gallery .photo-list .box {
+    display: block;
+    float: left;
+    line-height: 0;
+    margin:  20px 20px 0 0;
+    width: 320px;
+}
+
+.destination-gallery .photo-list .box:nth-child(1),
+.destination-gallery .photo-list .box:nth-child(2),
+.destination-gallery .photo-list .box:nth-child(3) {
+    margin-top: 0;
+}
+
+.destination-gallery .photo-list .box:nth-child(3n+3) {
+    margin-right: 0;
+}
+
+.destination-gallery .photo-list .box a {
+    display: block;
+}
+
+.destination-gallery .photo-list .box a img {
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.destination-gallery .photo-list .box a:hover img {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+.places {
+    display: block;
+    text-align: center;
+}
+
+.places .box {
+    display: inline-block;
+    margin: 0 2px 20px 2px;
+    width: 265px;
+    vertical-align: top;
+}
+
+.places .box .title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    line-height: 20px;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.places .box .desc {
+    text-align: justify;
+    padding: 10px;
+}
+
+.blog .content-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.blog .post-info {
+    color: #000;
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.blog .post-info span:after {
+    content: "|";
+    margin: 0 5px;
+}
+
+.blog .post-info span:last-child:after {
+    content: none;
+}
+
+.faq-questions {
+    padding-bottom: 0;
+}
+
+.faq-questions .black {
+    margin-top: 40px;
+}
+
+.faq-questions .faq-list {
+    display: block;
+}
+
+.faq-questions .faq-list:after {
+    content: "";
+    clear: both;
+    display: none;
+    height: 0;
+}
+
+.faq-questions .faq-list figure {
+    float: left;
+    display: inline-block;
+    width: 500px;
+    margin-right: 10px;
+}
+
+.faq-questions .faq-list .links {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 10px 10px 0 10px;
+    position: relative;
+    width: 470px;
+}
+
+.faq-questions .faq-list .links li {
+    color: #fff;
+    display: block;
+    position: relative;
+    padding: 0 0 10px 25px;
+}
+
+.faq-questions .faq-list .links li:before {
+    background: url(/web/20180804231846im_/http://myanmar.travel/wp-content/themes/myanmartravels/images/style/sprites.png) -280px -170px no-repeat;
+    content: "";
+    display: block;
+    position: relative;
+    height: 16px;
+    left: 0;
+    position: absolute;
+    top: 4px;
+    width: 16px;
+}
+
+.faq-questions .faq-list .links li a {
+    color: #fff;
+    font-size: 16px;
+}
+
+.faq-questions .faq-list .links li a:hover {
+    color: #000;
+}
+
+.faq .content-title {
+    font-weight: 600;
+    text-transform: none;
+}
+
+.dodonts {
+    background: #b3975a;
+    color: #000;
+    text-align: center;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.social-media h3 {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    background: #b3975a;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 5px;
+    padding: 5px;
+    width: 30px;
+}
+
+.social-media a:hover {
+    background: #000;
+}
+
+.getting-to .title,
+.getting-around .title {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.getting-to .box,
+.getting-around .box {
+    background: #b3975a;
+    display: block;
+    margin: 10px 0;
+}
+
+.getting-to .box:after,
+.getting-around .box:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+.getting-to .box figure {
+    float: left;
+    height: 165px;
+    overflow: hidden;
+    width: 250px;
+}
+
+.getting-around .box figure {
+    float: left;
+    height: 95px;
+    overflow: hidden;
+    width: 250px;
+}
+
+.getting-to .box .name,
+.getting-around .box .name {
+    color: #fff;
+    display: block;
+    float: left;
+    position: relative;
+    width: 230px;
+}
+
+.getting-to .box .name {
+    height: 165px;
+}
+
+.getting-around .box .name {
+    height: 95px;
+}
+
+.getting-to .box .name .middle,
+.getting-around .box .middle {
+    display: table;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 38px;
+    left: 50%;
+    padding: 20px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+
+@media only screen and (min-width:960px) and (max-width:1160px) {
+	.container {
+		width: 900px !important;
+	}
+
+	.container .split {
+		width: 430px;
+	}
+
+	.features .box {
+		width: 210px;
+	}
+
+	.features .box .title {
+		font-size: 14px;
+	}
+
+	.map .col-left {
+		width: 260px;
+	}
+
+	.map .col-right {
+		width: 630px;
+	}
+
+	.partners {
+		width: 600px;
+	}
+
+	.destination-gallery .photo-list .box {
+		width: 286px;
+	}
+
+	.tabs ul.list {
+		width: 295px;
+	}
+
+	.tabs ul.list li {
+		height: 32px;
+		line-height: 32px;
+	}
+
+	.tabs ul.list li .box {
+		width: 605px;
+	}
+
+	.tabs ul.list li a {
+		font-size: 18px;
+		height: 32px;
+		line-height: 32px;
+	}
+
+	.tabs ul.list li a:hover,
+	.tabs ul.list li.active a {
+		width: 290px;
+	}
+
+	.tabs ul.list li a:hover::after,
+	.tabs ul.list li.active a::after {
+		height: 32px;
+		background-position: -350px -184px;
+	}
+
+	#contactus .col-left {
+		width: 430px;
+	}
+
+	#contactus .col-right {
+		width: 420px;
+	}
+
+	.meetinmyanmar .block figure {
+		width: 545px;
+	}
+
+	.jumpto .box {
+		width: 445px;
+	}
+
+	.jumpto .box figure {
+		width: 225px;
+	}
+
+	.jumpto .box .name {
+		width: 220px;
+		height: 150px;
+	}
+
+	.welcome .desc .col {
+		width: 420px;
+	}
+
+	.content .block figure.alignleft,
+	.content .block figure.alignright {
+		width: 435px;
+	}
+
+	.members figure {
+		width: 450px;
+	}
+
+	.exe-members {
+		width: 430px;
+	}
+
+	.getintouch {
+		width: 400px;
+	}
+
+	.destination-intro figure {
+		max-width: 450px;
+	}
+
+	.threecol .col-info {
+		width: 230px;
+		min-height: auto;
+	}
+
+	.threecol .col-image {
+		width: 300px;
+	}
+
+	.threecol .col-blog {
+		width: 300px;
+	}
+
+	.activities-package .block {
+		width: 296px;
+	}
+
+	.activities-package .block .title span {
+		font-size: 25px;
+		line-height: 30px;
+	}
+
+	.activities-package.gallery .block:first-child {
+		width: 597px;
+	}
+
+	.activities-package.gallery .block .photo-list .box {
+		width: 182px;
+	}
+
+	.getting-to .box figure {
+		width: 225px;
+		height: 150px;
+	}
+
+	.getting-to .box .name {
+		width: 205px;
+		height: 150px;
+	}
+
+	.getting-around .box figure {
+		width: 225px;
+		height: 85px;
+	}
+
+	.getting-around .box .name {
+		width: 205px;
+		height: 85px;
+	}
+
+	.getting-to .box .name .middle,
+	.getting-around .box .middle {
+		width: 80%;
+		padding: 10px 0;
+	}
+
+	.faq-questions .faq-list figure {
+		width: 450px;
+	}
+
+	.faq-questions .faq-list .links {
+		width: 420px;
+	}
+
+}
+
+@media only screen and (min-width:768px) and (max-width:959px) {
+	.container {
+		width: 750px !important;
+	}
+
+	.container .split {
+		width: 355px;
+	}
+
+	.logo {
+		width: 220px;
+		height: 41px;
+		background-position: -410px -290px;
+	}
+
+	nav ul.mainmenu > li > a {
+		padding: 0 10px;
+	}
+
+	.video figure {
+		width: 300px;
+	}
+
+	.features .box {
+		width: 365px;
+		margin-bottom: 50px;
+	}
+
+	.features .box:nth-child(2n+2) {
+		margin-right: 0;
+	}
+
+	.features .box:nth-child(3),
+	.features .box:nth-child(4) {
+		margin-bottom: 0;
+	}
+
+	.map .col-left {
+		width: 235px;
+	}
+
+	.map .col-right {
+		width: 505px;
+	}
+
+	.partners {
+		width: 450px;
+	}
+
+	.destination-gallery .photo-list .box {
+		width: 236px;
+	}
+
+	.tabs ul.list {
+		width: 210px;
+	}
+
+	.tabs ul.list li {
+		height: 32px;
+		line-height: 32px;
+	}
+
+	.tabs ul.list li .box {
+		width: 540px;
+	}
+
+	.tabs ul.list li a {
+		font-size: 14px;
+		height: 32px;
+		line-height: 32px;
+		padding-left: 10px;
+	}
+
+	.tabs ul.list li a:hover,
+	.tabs ul.list li.active a {
+		width: 180px;
+	}
+
+	.tabs ul.list li a:hover::after,
+	.tabs ul.list li.active a::after {
+		height: 32px;
+		background-position: -350px -184px;
+	}
+
+	#contactus .col-left {
+		width: 350px;
+	}
+
+	#contactus .col-right {
+		width: 350px;
+	}
+
+	#contactus .col-right .signup h3 {
+		font-size: 28px;
+		line-height: 35px;
+	}
+
+	.meetinmyanmar .block figure {
+		width: 350px;
+	}
+
+	.meetinmyanmar .block .info {
+		font-size: 25px;
+		line-height: 30px;
+	}
+
+	.jumpto .box {
+		width: 370px;
+	}
+
+	.jumpto .box figure {
+		width: 185px;
+	}
+
+	.jumpto .box .name {
+		width: 185px;
+		height: 120px;
+	}
+
+	.jumpto .box .name .middle {
+		font-size: 25px;
+	}
+
+	.welcome .desc .col {
+		width: 345px;
+	}
+
+	.content .block figure.alignleft,
+	.content .block figure.alignright {
+		width: 350px;
+	}
+
+	.members figure {
+		width: 350px;
+	}
+
+	.exe-members {
+		width: 350px;
+	}
+
+	.getintouch {
+		width: 330px;
+	}
+
+	.destination-title {
+		font-size: 45px;
+		line-height: 50px;
+	}
+
+	.destination-intro figure {
+		max-width: 300px;
+	}
+
+	.threecol .col-info {
+		width: auto;
+		margin-bottom: 5px;
+		margin-right: 0;
+		float: none;
+		min-height: auto;
+	}
+
+	.threecol .col-image {
+		width: 330px;
+	}
+
+	.threecol .col-blog {
+		width: 415px;
+	}
+
+	.places .box {
+		width: 240px;
+	}
+
+	.activities-package .block {
+		width: 296px;
+	}
+
+	.activities-package .block .title span {
+		font-size: 25px;
+		line-height: 30px;
+	}
+
+	.activities-package.gallery .block:first-child {
+		width: 597px;
+	}
+
+	.activities-package.gallery .block .photo-list .box {
+		width: 182px;
+	}
+
+	.getting-to .box figure {
+		width: 180px;
+		height: 120px;
+	}
+
+	.getting-to .box .name {
+		width: 175px;
+		height: 120px;
+	}
+
+	.getting-around .box figure {
+		width: 180px;
+		height: 68px;
+	}
+
+	.getting-around .box .name {
+		width: 175px;
+		height: 68px;
+	}
+
+	.getting-to .title,
+	.getting-around .title {
+		font-size: 20px;
+	}
+
+	.getting-to .box .name .middle,
+	.getting-around .box .middle {
+		font-size: 20px;
+		line-height: 30px;
+		width: 80%;
+		padding: 10px 0;
+	}
+
+	.faq-questions .faq-list figure {
+		width: 300px;
+	}
+
+	.faq-questions .faq-list .links {
+		width: 420px;
+	}
+
+}
+
+@media only screen and (max-width:767px) {
+	body {
+		font-size: 12px;
+	}
+
+    body.scroll-hide {
+        overflow: hidden;
+    }
+
+	.container {
+		width: 100% !important;
+	}
+
+	.container .split {
+		float: none;
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;
+	}
+
+	section.content {
+		padding: 20px;
+	}
+
+	header {
+		margin-top: 50px;
+	}
+
+	header .top {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 50px;
+		width: 100%;
+		z-index: 99999999;
+	}
+
+	header .top .center {
+		display: block;
+		padding: 0 20px;
+		text-align: center;
+	}
+
+	header .bottom .container {
+		height: 57px;
+	}
+
+	.top-nav {
+		display: none;
+	}
+
+	.search-box {
+		float: right;
+		margin: auto;
+	}
+
+	.logo {
+        float: none;
+		margin: auto;
+	}
+
+	.btn_open {
+        background: transparent;
+        border: 0;
+        color: #fff;
+        font-size: 24px;
+        cursor: pointer;
+        display: block;
+        height: 50px;
+        line-height: 50px;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        overflow: hidden;
+        left: 20px;
+        width: 50px;
+    }
+
+    nav {
+        height: 100%;
+        background: #fff;
+        display: block;
+        position: fixed;
+        text-align: left;
+        top: 0;
+        z-index: 999999;
+        width: 100%;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        overflow: hidden;
+    }
+
+    nav.hide {
+        left: -100%;
+    }
+
+    nav.show {
+        left: 0;
+    }
+
+    nav ul.mainmenu {
+        display: block;
+        margin: 0;
+        overflow-y: scroll;
+        height: 100%;
+    }
+
+    nav ul.mainmenu > li {
+        border-bottom: 1px solid #e4e4e4;
+        border-right: 0;
+        display: block;
+        float: none;
+        height: auto;
+        line-height: 35px;
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase;
+    }
+
+    nav ul.mainmenu > li:first-child {
+    	padding-top: 50px;
+    }
+
+    nav ul.mainmenu li:nth-child(1),
+    nav ul.mainmenu li:nth-child(2),
+    nav ul.mainmenu li:nth-child(3),
+    nav ul.mainmenu li:nth-child(4),
+    nav ul.mainmenu li:nth-child(5) {
+        display: block;
+    }
+
+    nav ul.mainmenu li a {
+        color: #333;
+        display: block;
+        font-size: 13px;
+        font-weight: 600;
+        height: auto;
+        line-height: 35px;
+        padding: 0 15px;
+        margin: 0;
+        text-align: left;
+        max-width: none;
+    }
+
+    nav ul.mainmenu > li a {
+        font-weight: 700;
+    }
+
+    nav ul.mainmenu li a:hover {
+        background: #000;
+        color: #fff;
+    }
+
+    nav ul.mainmenu li.menu-item-has-children > a::after {
+    	content: none;
+    }
+
+    nav ul.mainmenu ul {
+        background: none;
+        box-shadow: none;
+        display: block;
+        left: 0;
+        padding: 0;
+        position: relative;
+        top: 0;
+        width: auto;
+    }
+
+    nav ul.mainmenu ul li {
+        background: none;
+        border-top: 1px solid #e4e4e4;
+        border-bottom: 0;
+        font-size: 13px;
+        line-height: normal;
+    }
+
+    nav ul.mainmenu ul li a {
+        color: #666;
+        font-weight: 400;
+        padding: 0 15px;
+        text-transform: none;
+    }
+
+    nav ul.mainmenu ul li a:before {
+        content: "\00bb";
+        margin-right: 5px;
+    }
+
+	footer .top {
+		display: none;
+	}
+
+	.breadcrumb {
+		font-size: 11px;
+		padding: 5px 20px;
+	}
+
+	.video figure {
+		float: none;
+		margin: 0 0 20px 0;
+		width: 100%;
+	}
+
+	.box-intro {
+		padding: 20px;
+		font-size: 14px;
+		line-height: 22px;
+	}
+
+	.features .box {
+		float: none;
+		margin: 0;
+		padding: 20px 0;
+		width: 100%;
+	}
+
+	.features .box:last-child {
+		margin-bottom: 0
+	}
+
+	.ask h3 {
+		font-size: 35px;
+		line-height: 40px;
+	}
+
+	.ask h4 {
+		font-size: 30px;
+		line-height: 35px;
+	}
+
+	.map .col-left,
+	.map .col-right {
+		margin: 0 0 20px 0;
+		float: none;
+		width: 100%;
+	}
+
+	.section-title,
+	.destination-gallery .section-title {
+		font-size: 30px;
+		line-height: 32px;
+	}
+
+	.content-title {
+		font-size: 22px;
+		line-height: 26px;
+		margin-bottom: 10px;
+	}
+
+	.sitemap {
+		margin-bottom: 20px;
+	}
+
+	.home-getintouch {
+		float: none;
+		margin: 0 0 20px 0;
+		width: 100%;
+	}
+
+	.partners {
+		float: none;
+		margin: 0;
+		width: 100%;
+	}
+
+	.partners .title {
+		display: block;
+		max-width: none;
+	}
+
+	.partners .company-logos .box {
+		width: 100%;
+		margin: 10px 0;
+	}
+
+	.tabs {
+		overflow: visible;
+		padding-top: 200px;
+	}
+
+	.tabs ul.list {
+		width: 100%;
+	}
+
+	.tabs ul.list li .box {
+		width: 100%;
+		height: 200px;
+		overflow: hidden;
+	}
+
+	.tabs ul.list li a {
+		padding: 0 10px;
+		border: 0;
+	}
+
+	.tabs ul.list li a:hover,
+	.tabs ul.list li.active a {
+		width: auto;
+		display: block;
+		position: relative;
+		border: 0;
+		color: #fff;
+	}
+
+	.tabs ul.list li a:after {
+		display: none;
+	}
+
+	.content .block figure.alignleft,
+	.content .block figure.alignright {
+		width: auto;
+		float: none;
+		margin: 0 0 10px 0;
+		display: block;
+	}
+
+    .destination-title {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .destination-intro figure {
+        display: block;
+        float: none;
+        width: auto;
+        margin: 0;
+    }
+
+    .threecol .col-info,
+    .threecol .col-image,
+    .threecol .col-blog {
+        display: block;
+        float: none;
+        margin: 0 0 20px 0;
+        width: auto;
+        min-height: auto;
+    }
+
+    .threecol .col-blog {
+        margin-bottom: 0;
+    }
+
+    .places .box {
+        display: block;
+        float: none;
+        width: auto;
+    }
+
+    .places .box .desc {
+        padding: 10px 0;
+    }
+
+    .activities-bg .block:last-child {
+        margin-bottom: 0;
+    }
+
+    .activities-bg .block:last-child .readon {
+        margin-bottom: 0;
+    }
+
+    .activities-package .block {
+        display: block;
+        float: none;
+        margin: 0 0 20px 0;
+        width: auto;
+    }
+
+    .activities-package .block .title {
+        padding: 10px;
+        height: auto;
+    }
+
+    .activities-package .block .title span {
+        left: auto;
+        padding: 0;
+        position: relative;
+        top: auto;
+        transform: none;
+        width: auto;
+    }
+
+    .activities-package .block.blog {
+        margin-bottom: 0;
+    }
+
+    .activities-package.gallery .block:first-child {
+        width: auto;
+    }
+
+    .activities-package .block:nth-child(2),
+    .activities-package .block:nth-child(3) {
+        margin-bottom: 0;
+    }
+    
+    .activities-package.gallery .block .title,
+    .activities-package .block.blog .title {
+        margin-bottom: 20px;
+    }
+
+    .activities-package.gallery .block .title span,
+    .activities-package .block.blog .title span {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .activities-package.gallery .block .title span::after,
+    .activities-package .block.blog .title span::after {
+        bottom: -15px;
+    }
+
+    .meetinmyanmar h2 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .meetinmyanmar h3,
+    .meetinmyanmar h3 span {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .meetinmyanmar .block figure {
+        float: none;
+        display: block;
+        width: 100%;
+    }
+
+    .meetinmyanmar .block .info {
+        display: block;
+        font-size: 20px;
+        line-height: 25px;
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .content .block .box {
+        display: block;
+    }
+
+    .wp-pagenavi a, .wp-pagenavi span {
+        line-height: 25px;
+        padding: 0 10px;
+        font-size: 11px;
+    }
+
+    .faq-questions .faq-list figure {
+        display: block;
+        float: none;
+        margin: 0;
+        width: auto;
+    }
+
+    .faq-questions .faq-list .links {
+        display: block;
+        float: none;
+        width: auto;
+    }
+
+    #contactus {
+        padding: 20px;
+    }
+
+    #contactus .col-left,
+    #contactus .col-right {
+        border: 0;
+        display: block;
+        float: none;
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    #contactus .col-left {
+        margin-bottom: 20px;
+    }
+
+    #contactus .col-right .signup {
+        margin-left: 0;
+    }
+
+    .jumpto .box {
+        display: block;
+        float: none;
+        margin: 0 0 20px 0;
+        width: auto;
+    }
+
+    .jumpto .box:last-child {
+        margin-bottom: 0;
+    }
+
+    .jumpto .box figure {
+        display: block;
+        float: none;
+        margin: 0;
+        width: 100%;
+    }
+
+    .jumpto .box .name {
+        display: block;
+        float: none;
+        height: auto;
+        width: auto;
+    }
+
+    .jumpto .box .name .middle {
+        display: block;
+        font-size: 20px;
+        line-height: 24px;
+        padding: 10px;
+        left: auto;
+        position: relative;
+        top: auto;
+        transform: none;
+        text-align: center;
+    }
+
+    .mission ul li {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .welcome .desc {
+        font-size: 14px;
+    }
+
+    .welcome .desc .col {
+        width: auto;
+        display: block;
+        margin: 0;
+        float: none;
+    }
+
+    .welcome .desc .col:first-child {
+        margin-right: 0;
+    }
+
+    .members {
+        padding-top: 0;
+    }
+
+    .members figure {
+        display: block;
+        float: none;
+        margin: 0 0 20px 0;
+        width: auto;
+    }
+
+    .members .details {
+        display: block;
+        font-size: 14px;
+    }
+
+    .exe-members {
+        border: 0;
+        font-size: 14px;
+        float: none;
+        display: block;
+        padding: 0;
+        margin-bottom: 40px;
+        width: auto;
+    }
+
+    .getintouch {
+        display: block;
+        float: none;
+        padding: 0;
+        width: auto;
+    }
+
+    .getting-to {
+        margin-bottom: 50px;
+    }
+
+    .getting-to .title,
+    .getting-around .title {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+
+    .getting-to .box figure,
+    .getting-around .box figure {
+        width: auto;
+        display: block;
+        float: none;
+        margin: 0;
+    }
+
+    .getting-to .box .name,
+    .getting-around .box .name {
+        display: block;
+        float: none;
+        height: auto;
+        width: auto;
+    }
+
+    .getting-to .box .name .middle,
+    .getting-around .box .name .middle {
+        display: block;
+        font-size: 20px;
+        line-height: 24px;
+        padding: 10px;
+        left: auto;
+        position: relative;
+        top: auto;
+        transform: none;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (min-width:480px) and (max-width:767px) {
+
+}
+
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after,
+.container:before,
+.container:after {
+    content: '.';
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+}
+
+.clear {
+    clear: both;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+}
+
+.row:after,
+.clearfix:after,
+.container:after {
+    clear: both;
+}
+
+.row,
+.clearfix {
+    zoom: 1;
+}
+
+img,
+object,
+embed {
+    max-width: 100%;
+}
+
+img {
+    height: auto;
+}
+
+.article-more {
+text-align: right;
+}
+/*
+     FILE ARCHIVED ON 23:18:46 Aug 04, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:13:57 May 20, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 1.037
+  exclusion.robots: 0.212
+  exclusion.robots.policy: 0.194
+  esindex: 0.012
+  cdx.remote: 12.099
+  LoadShardBlock: 339.747 (3)
+  PetaboxLoader3.resolve: 1063.88 (4)
+  PetaboxLoader3.datanode: 146.818 (5)
+  load_resource: 890.159 (2)
+*/
